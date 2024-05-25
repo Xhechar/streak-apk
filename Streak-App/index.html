@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Streak App | Felix Okoth</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32X32"
+      href="icons/imageIcon.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="contents-container">
+        <header>MY STREAK COMPANION</header>
+        <section>
+          <div class="left-side">
+            <form>
+              <div class="form1">
+                <label>Habit Stopped :</label>
+                <input
+                  type="text"
+                  id="text"
+                  placeholder="type habit here ..."
+                />
+                <p class="error-message"></p>
+              </div>
+              <div class="form1">
+                <label for="date">Date Stopped :</label>
+                <input
+                  style="margin-left: 3%"
+                  type="date"
+                  id="date"
+                  placeholder="type here ..."
+                />
+                <p class="error-message"></p>
+              </div>
+              <div class="form2">
+                <input
+                  type="button"
+                  value="Save Details"
+                  id="submission-button"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="right-side">
+            <div class="heading">
+              <h1>Recent Activities</h1>
+              <div class="header-buttons-container">
+                <button class="refresh">Show Activities</button>
+                <button class="clear-btn">Clear Form</button>
+              </div>
+            </div>
+            <div class="activities"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="dist/main.js"></script>
+  </body>
+</html>
